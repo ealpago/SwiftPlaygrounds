@@ -48,7 +48,7 @@ let todayWeather = Weather.windy(speed: 10)
 
 //Enum raw values
 
-enum Months {
+enum Months: Int {
     case January = 1
     case February
     case March

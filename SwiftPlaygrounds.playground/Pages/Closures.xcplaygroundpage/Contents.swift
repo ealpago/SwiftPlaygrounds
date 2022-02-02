@@ -149,3 +149,9 @@ func multipleParameters(action: (String, Int) -> String) {
 multipleParameters {
     "\($0) and it costs \($1)k$\n"
 }
+
+
+
+
+
+
