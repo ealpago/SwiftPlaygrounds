@@ -129,4 +129,8 @@ returnValues { (example: String) -> String in
 
 print("----\n")
 
+//Shorthand
 
+returnValues {
+    "This is Shorthand example to \($0)"
+}
