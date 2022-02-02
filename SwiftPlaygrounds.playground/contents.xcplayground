@@ -3,5 +3,6 @@
     <pages>
         <page name='Basics'/>
         <page name='Closures'/>
+        <page name='Enum'/>
     </pages>
 </playground>

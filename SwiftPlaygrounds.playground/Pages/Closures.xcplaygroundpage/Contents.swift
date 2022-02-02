@@ -134,3 +134,18 @@ print("----\n")
 returnValues {
     "This is Shorthand example to \($0)"
 }
+
+print("----\n")
+
+
+//Shorthand Closure can take many parameters but more than 3 can be confusing
+
+func multipleParameters(action: (String, Int) -> String) {
+    print("I wanna this car")
+    let car = action("Volvo", 100)
+    print(car)
+}
+
+multipleParameters {
+    "\($0) and it costs \($1)k$\n"
+}
