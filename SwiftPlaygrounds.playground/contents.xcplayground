@@ -6,5 +6,6 @@
         <page name='Enum'/>
         <page name='NetworkManager'/>
         <page name='Structures'/>
+        <page name='Classes'/>
     </pages>
 </playground>
