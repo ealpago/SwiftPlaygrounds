@@ -57,8 +57,20 @@ denemeString = "String"
 
 let pi = 3.14
 let integerPi = Int(pi)
-print(integerPi)
+print("\(integerPi)\n")
 
+print("--------\n")
+
+//Booleans
+
+let thisIsTrue = true
+let thisIsFalse = false
+
+if thisIsTrue {
+    print("this means true")
+} else {
+    print(thisIsFalse)
+}
 
 
 
