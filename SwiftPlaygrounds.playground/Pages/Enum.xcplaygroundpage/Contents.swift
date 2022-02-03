@@ -57,3 +57,23 @@ enum Months: Int {
 // Jan = 1 , Feb = 2 , March = 3
 
 
+// enum switch case example
+enum Tech {
+    case iOS
+    case frontend
+    case android
+    case backend
+}
+
+var whichTech:Tech = .iOS
+
+switch whichTech {
+case .iOS:
+    print("You should learn swift")
+case .frontend:
+    print("You should learn som html and css")
+case .android:
+    print("you should learn kotlin")
+case .backend:
+    print("you should learn c#")
+}
