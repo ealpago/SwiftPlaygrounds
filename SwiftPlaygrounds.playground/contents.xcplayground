@@ -4,5 +4,6 @@
         <page name='Basics'/>
         <page name='Closures'/>
         <page name='Enum'/>
+        <page name='NetworkManager'/>
     </pages>
 </playground>
