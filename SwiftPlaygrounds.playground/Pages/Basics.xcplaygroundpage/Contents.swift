@@ -67,10 +67,28 @@ let thisIsTrue = true
 let thisIsFalse = false
 
 if thisIsTrue {
-    print("this means true")
+    print("this means true\n")
 } else {
     print(thisIsFalse)
 }
+
+print("--------\n")
+
+//tuples
+
+var emre = (name: "Emre", age: 21)
+print(emre.name)
+print("\(emre.age)\n")
+
+
+print("--------\n")
+
+//optionals
+
+let possibleNumber = "123"
+let convertedNumber = Int(possibleNumber) //what if we say possibelNumber = "onetwothree"
+
+print(convertedNumber.self as Any)
 
 
 
