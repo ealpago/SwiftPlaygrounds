@@ -12,6 +12,9 @@ class Animal {
         self.name = name
         self.sound = sound
     }
+    func makeSound(){
+        print("Sound")
+    }
 }
 
 var dog = Animal(name:"Dog", sound:"wof")
@@ -38,8 +41,11 @@ var cow = Cow(name:"Cow", sound:"Mö")
 cow.name
 cow.sound
 cow.giveMilk()
+cow.makeSound()
 
 print("\n----\n")
+
+
 
 //inheritance another example
 class Personal{
@@ -75,7 +81,7 @@ print("\n----\n")
 //Deinitializers
 
 class Singer{
-    var name:String
+    var name:String?
     init(name:String){
         self.name = name
         print("\(name) is awesome person and made amazing song!")
@@ -86,4 +92,7 @@ class Singer{
 }
 
 var barisManco = Singer(name: "Barış Manço")
+barisManco = Singer(name: "Mehmet manço")
+
+
 //deiniti güncelle akşam toplantıda sor******

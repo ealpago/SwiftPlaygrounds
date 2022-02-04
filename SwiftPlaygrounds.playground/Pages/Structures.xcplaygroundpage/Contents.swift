@@ -95,7 +95,7 @@ print(user.username)
 print("\n----\n")
 
 //lazy properties
-
+//*************
 struct Family{
     init(){
         print("Welcome to family")
@@ -128,8 +128,28 @@ struct PersonWantAlcohol{
     }
 }
 
-let deneme = PersonWantAlcohol(name: "Emre", age: 22)
-print(deneme.canTakeAlcohol)
+let person = PersonWantAlcohol(name: "Emre", age: 22)
+print(person.canTakeAlcohol)
 
 //get set??????
 
+struct LongEdge{
+    var x = 0
+}
+
+struct ShortEdge{
+    
+}
+
+struct Rectangle{
+    var longEdge = LongEdge()
+    var shortEdge = <#value#>
+    
+    var area: Edges{
+        get{
+            
+        }set{
+            
+        }
+    }
+}
