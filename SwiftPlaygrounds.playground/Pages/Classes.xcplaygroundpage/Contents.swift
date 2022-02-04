@@ -87,7 +87,7 @@ class Singer{
         print("\(name) is awesome person and made amazing song!")
     }
     deinit{
-        print("\(name) is no more with us")
+        print("\(name!) is no more with us")
     }
 }
 
