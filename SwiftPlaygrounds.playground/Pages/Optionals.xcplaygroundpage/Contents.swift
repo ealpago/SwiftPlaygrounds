@@ -2,8 +2,6 @@
 
 import Foundation
 import UIKit
-import Darwin
-
 //Handling missing data
 
 var name:String?
@@ -62,7 +60,7 @@ if let no = emre.home?.aptNO{
 } else {
     print("No need this")
 }
-
+///ASK HERE-->
 var mehmet = Person(name: "mehmet")
 mehmet.home?.aptNO = 123
 if let no1 = mehmet.home?.aptNO{

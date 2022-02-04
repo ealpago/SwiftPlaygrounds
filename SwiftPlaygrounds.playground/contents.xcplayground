@@ -9,5 +9,6 @@
         <page name='Classes'/>
         <page name='Optionals'/>
         <page name='Types'/>
+        <page name='Extensions'/>
     </pages>
 </playground>
