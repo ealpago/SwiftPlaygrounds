@@ -20,6 +20,7 @@ let typeString = firstLetter(letters)
 print(typeString)
 
 print("\n--\n")
+
 //But doing same thing
 //Generics solve this problem.
 

@@ -46,17 +46,31 @@ print("\n--------\n")
 //Nested Types
 
 struct Soccer{
-    enum positions:String {
+    enum Positions:String {
     case defense = "Defans oyuncusu",
        goalkeeper = "Kaleci",
        striker = "Forvet"
     }
 }
 
-let playerRole = Soccer.positions.defense.rawValue
+let playerRole = Soccer.Positions.defense
+let player = Soccer.Positions(rawValue: "Forvet")
 
+switch playerRole{
+case .striker:
+    print("Striker block")
+case .goalkeeper, .defense:
+    print("Goalkeeper and defense block")
+default:
+    break
+}
 
 //Opaque Types
 
 
+class Player{
+    init(){}
+}
 
+class Defence: Player{
+}

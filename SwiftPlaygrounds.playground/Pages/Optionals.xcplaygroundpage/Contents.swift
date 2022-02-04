@@ -46,8 +46,6 @@ class Adress{
     }
 }
 
-//Optional Chaining
-
 class Person{
     var name:String
     var home:Adress?
@@ -58,17 +56,16 @@ class Person{
 }
 
 var emre = Person(name:"emre")
-
-if let no = emre.home?.aptNO{
-    print("You live No \(no)")
+if let home = emre.home{
+    print("You live No \(home.aptNO)")
 } else {
     print("No need this")
 }
 ///ASK HERE-->
 var mehmet = Person(name: "mehmet")
-mehmet.home?.aptNO = 123
-if let no1 = mehmet.home?.aptNO{
-    print("You live No \(no1)")
+mehmet.home = Adress(aptNo: 123)
+if let no1 = mehmet.home{
+    print("You live No \(no1.aptNO)")
 } else {
     print("No need this")
 }
