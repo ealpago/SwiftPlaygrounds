@@ -2,6 +2,8 @@
 
 import Foundation
 import UIKit
+
+
 //Handling missing data
 
 var name:String?
@@ -43,6 +45,8 @@ class Adress{
         self.aptNO = aptNo
     }
 }
+
+//Optional Chaining
 
 class Person{
     var name:String

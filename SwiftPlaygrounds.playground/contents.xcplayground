@@ -10,5 +10,7 @@
         <page name='Optionals'/>
         <page name='Types'/>
         <page name='Extensions'/>
+        <page name='Generics'/>
+        <page name='Acess Control'/>
     </pages>
 </playground>
