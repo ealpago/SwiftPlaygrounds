@@ -50,8 +50,6 @@ extension String {
     }
 }
 
-
-
 // tupple -> (Int, Int)
 let timeVariable = "22:55".time()
 
