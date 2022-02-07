@@ -2,6 +2,7 @@
 
 import Foundation
 import UIKit
+import Darwin
 
 protocol FirstProtocol{
     var name:String { get }
@@ -113,3 +114,45 @@ class FullNameClass: FullNameProtocol{
 
 let myTeamLead = FullNameClass()
 myTeamLead.fullNameReturn()
+
+
+//*****
+
+protocol PowerProtocol{
+    associatedtype T
+}
+
+
+class PowerClass<T>: PowerProtocol{
+    func powerFunction(type: T){
+         print(type)
+    }
+}
+
+extension PowerProtocol where T == Double{
+    func returnDouble(){
+        print("Return Double")
+    }
+}
+
+class DoubleClass:PowerClass<Double>{
+    override func powerFunction(type: Double) {
+        print(type)
+        returnDouble()
+    }
+}
+
+class StringClass:PowerClass<String>{
+    override func powerFunction(type: String) {
+        print(type)
+    }
+}
+
+let doubleLet = DoubleClass()
+doubleLet.powerFunction(type: 12.34)
+
+print("")
+
+let stringLet = StringClass()
+stringLet.powerFunction(type: "String")
+
